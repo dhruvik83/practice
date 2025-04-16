@@ -1,0 +1,18 @@
+<p>form works!</p>
+<form [formGroup]="studentInfo" (submit)="onSubmit()">
+
+    <input type="text" formControlName="firstName">
+    <div *ngIf="studentInfo.controls['firstName'].errors && (studentInfo.controls['firstName'].touched ||isSubmit )" style="color: red;">
+        Name is required.</div>
+
+    <input type="text" formControlName="lastName">
+
+    <input type="checkbox" formControlName="isActive"> Active
+
+    <button type="submit">Submit</button>
+</form>
+
+
+<button>
+    Send Massage
+</button>

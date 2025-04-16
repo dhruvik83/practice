@@ -1,0 +1,19 @@
+.example-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .mat-header-cell, .mat-cell {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  .cdk-drag-preview {
+    background-color: #ddd;
+  }
+  
+  .cdk-drag-placeholder {
+    background-color: #e1e1e1;
+  }
+  

@@ -1,0 +1,18 @@
+<div>
+    <h1>Angular Signal with Array of Objects</h1>
+  
+    <!-- <p>Current Title: {{ pageTitle() }}</p> -->
+  
+    <!-- Button to add an item -->
+    <button (click)="addItem('New Item ' + (items.length + 1))">Add Item</button>
+    
+    <!-- Button to remove the last item -->
+    <button (click)="removeItem()">Remove Last Item</button>
+  
+    <ul>
+      <li *ngFor="let item of items">
+        {{ item.name }}
+      </li>
+    </ul>
+  </div>
+  

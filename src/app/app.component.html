@@ -1,0 +1,73 @@
+<style>
+  a {
+    text-decoration: none;
+
+  }
+
+  li {
+    list-style: none;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+  }
+</style>
+
+<ul>
+  <li>
+    <a [routerLink]="['/temp']">
+      Temp
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/signal']">
+      Signal
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/agGrid']">
+      Ag Grid
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/material']">
+
+      Material
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/form']">
+      Form
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/formArray']">
+      Form Array
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/payment']">
+      Payment
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/primeng']">
+      Prime ng
+    </a>
+  </li>
+   <li>
+    <a [routerLink]="['/primeng']">
+      Prime ng
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/drag-drop']">
+      Drag drop
+    </a>
+  </li>
+
+</ul>
+<router-outlet></router-outlet>

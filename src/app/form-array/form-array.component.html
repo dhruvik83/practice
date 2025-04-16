@@ -1,0 +1,18 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div formArrayName="items">
+      <div *ngFor="let item of items.controls; let i = index" [formGroupName]="i">
+        <label>
+          Name:
+          <input formControlName="name" />
+        </label>
+        <label>
+          Quantity:
+          <input formControlName="quantity" />
+        </label>
+        <button type="button" (click)="removeItem(i)">Remove</button>
+      </div>
+    </div>
+    <button type="button" (click)="addItem()">Add Item</button>
+    <button type="submit">Submit</button>
+  </form>
+  
